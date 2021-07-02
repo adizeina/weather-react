@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.app{
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.3s ease all;
+}
+
+.app.clear{
+  background-image: url('./assets/clear.jpg');
+  transition: 0.3s ease all;
+}
+
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+}
+
+/* Search Box */
+search-box {
+  position: relative;
+  display: inline-block;
+  padding: 2% 40%;
+  width: 60%;
+  margin: 0 0 110px;
+  
+}
+
+.search-box .search-bar{
+  display:block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  border:none;
+  background-color: rgba(255,255,255, 0.5);
+  border: rgba(255,255,255, 0.5) 1px solid;
+  box-shadow: 5px 5px rgba(255,255,255, 0.5);
+  font-size: 20px;
+  color:black;
+  border-radius: 16px 16px 16px 16px;
+  transition: 0.3s ease;
+} 
+
+.search-box .search-bar:focus{
+  outline:0;
+  background-color: rgba(255,255,255, 0.75);
+
+}
+
+.location-box{
+  margin: 10px;
+}
+
+.location-box .location{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  
+}
+
+.location-box .date{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.weather-box{
+  text-align: center;
+}
+
+.weather-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+
+  color: white;
+  font-size: 70px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50,50,70,0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0,0,0,0.2)
+
+
+}
+
+.weather-box .weather{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  
+}
+
+
